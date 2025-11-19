@@ -5,10 +5,8 @@ from PIL import Image
 import onnxruntime as ort
 import numpy as np
 import aiohttp, io, os
-from dotenv import load_dotenv
 
-# 🔐 Load token
-load_dotenv()
+
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 # ------------------------------
