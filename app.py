@@ -14,7 +14,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 # ------------------------------
 # 1️⃣ Load ONNX model
 # ------------------------------
-MODEL_PATH = "models/vit_b_32_visual.onnx"  # your downloaded ONNX visual model
+MODEL_PATH = "vit_b_32_visual.onnx"  # your downloaded ONNX visual model
 print("Loading ONNX model...")
 session = ort.InferenceSession(MODEL_PATH, providers=["CPUExecutionProvider"])
 input_name = session.get_inputs()[0].name
